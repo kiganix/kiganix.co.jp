@@ -4,8 +4,11 @@ import Head from 'next/head'
 import getConfig from 'next/config'
 import { useRouter } from 'next/router'
 import i18n from '../i18n'
+import { config as faConfig } from '@fortawesome/fontawesome-svg-core'
 
 const { _, publicRuntimeConfig } = getConfig()
+
+faConfig.autoAddCss = false
 
 const Layout  = ({ children }) => {
   const router = useRouter()
