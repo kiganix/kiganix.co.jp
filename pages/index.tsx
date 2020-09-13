@@ -20,7 +20,7 @@ const clients: { nameKey: string, url: string, asideKey: string }[] = [
 const Index = ({ t, i18n }) => (
     <>
         <Head>
-            <title>{t('title')}</title>
+            <title lang={i18n.language}>{t('title')}</title>
         </Head>
         <div id="locales">
             <span>Language: </span>
