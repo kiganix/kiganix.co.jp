@@ -40,7 +40,7 @@ const Index = ({ t, i18n }) => (
                 <tr>
                     <th>{t('label-for-company-number')}</th>
                     <td>
-                        <a href="https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8012803002172" target="_blank">8012803002172</a>
+                        <a href={t('nta-company-number')} target="_blank">8012803002172</a>
                         <a href={t('about-nta-company-number')} target="_blank"><FontAwesomeIcon icon={faQuestionCircle} className="infomark"/></a>
                     </td>
                 </tr>
