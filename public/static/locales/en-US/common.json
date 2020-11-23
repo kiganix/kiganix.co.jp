@@ -30,5 +30,7 @@
     "about-organizational-jp-domain": "https://jprs.co.jp/en/jpdomain.html",
     "about-duns-number": "https://www.dnb.com/duns-number.html",
     "about-nta-company-number": "https://www.houjin-bangou.nta.go.jp/en/setsumei/",
-    "nta-company-number": "https://www.houjin-bangou.nta.go.jp/en/henkorireki-johoto.html?selHouzinNo=8012803002172"
+    "nta-company-number": "https://www.houjin-bangou.nta.go.jp/en/henkorireki-johoto.html?selHouzinNo=8012803002172",
+    "about-gln": "https://www.gs1.org/standards/id-keys/gln",
+    "about-gs1prefix": "https://www.gs1.org/standards/id-keys/company-prefix"
 }

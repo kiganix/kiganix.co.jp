@@ -52,6 +52,20 @@ const Index = ({ t, i18n }) => (
                     </td>
                 </tr>
                 <tr>
+                    <th>GS1 Company Prefix</th>
+                    <td>
+                        <span>457151931</span>
+                        <a href={t('about-gs1prefix')} target="_blank"><FontAwesomeIcon icon={faQuestionCircle} className="infomark"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Global Location Number (GLN)</th>
+                    <td>
+                        <span>4571519310004</span>
+                        <a href={t('about-gln')} target="_blank"><FontAwesomeIcon icon={faQuestionCircle} className="infomark"/></a>
+                    </td>
+                </tr>
+                <tr>
                     <th>{t('label-for-corporate-website')}</th>
                     <td>
                         <span>https://kiganix.co.jp</span>
