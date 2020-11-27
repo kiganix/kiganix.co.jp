@@ -10,10 +10,8 @@ import { shuffle } from 'd3-array'
 const { _, publicRuntimeConfig } = getConfig()
 
 const clients: { nameKey: string, url: string, asideKey: string }[] = [
-    { nameKey: 'fluct-inc', url: 'https://corp.fluct.jp', asideKey: 'fluct-inc-aside' },
-    { nameKey: 'zucks-inc', url: 'https://zucks.co.jp', asideKey: 'zucks-inc-aside' },
+    { nameKey: 'vg-inc', url: 'https://voyagegroup.com', asideKey: 'vg-inc-aside' },
     { nameKey: 'sepori-inc', url: 'https://www.septeni-original.co.jp', asideKey: 'sepori-inc-aside' },
-    { nameKey: 'vm-inc', url: 'https://voyagemarketing.com', asideKey: 'vm-inc-aside' },
     { nameKey: 'seisa-kokusai', url: 'https://www.seisagroup.jp', asideKey: 'seisa-kokusai-aside' },
 ]
 
