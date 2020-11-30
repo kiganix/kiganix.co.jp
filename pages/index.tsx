@@ -6,16 +6,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { shuffle } from 'd3-array'
+import { TFunction } from 'next-i18next'
 
 const { _, publicRuntimeConfig } = getConfig()
 
-const clients: { nameKey: string, url: string, asideKey: string }[] = [
+type Client = { nameKey: string, url: string, asideKey: string }
+
+const clients: Client[] = [
     { nameKey: 'fluct-inc', url: 'https://corp.fluct.jp', asideKey: 'fluct-inc-aside' },
     { nameKey: 'zucks-inc', url: 'https://zucks.co.jp', asideKey: 'zucks-inc-aside' },
     { nameKey: 'sepori-inc', url: 'https://www.septeni-original.co.jp', asideKey: 'sepori-inc-aside' },
     { nameKey: 'vm-inc', url: 'https://voyagemarketing.com', asideKey: 'vm-inc-aside' },
     { nameKey: 'seisa-kokusai', url: 'https://www.seisagroup.jp', asideKey: 'seisa-kokusai-aside' },
 ]
+
+const ClientListItem = ({ client, t }: { client: Client, t: TFunction }) => {
+    return <li key={client.nameKey}>
+        <a href={client.url} target="_blank">{t(client.nameKey)}</a>
+        &nbsp;
+        <span>{t(client.asideKey)}</span>
+    </li>
+}
 
 const Index = ({ t, i18n }) => (
     <>
@@ -102,15 +113,7 @@ const Index = ({ t, i18n }) => (
         </table>
         <h2>{t('our-clients')}</h2>
         <ul>
-            {shuffle(clients).map((itr) => {
-                return <>
-                    <li>
-                        <a href={itr.url} target="_blank">{t(itr.nameKey)}</a>
-                        &nbsp;
-                        <span>{t(itr.asideKey)}</span>
-                    </li>
-                </>
-            })}
+            { shuffle(clients).map((itr) => <ClientListItem client={itr} t={t} />) }
         </ul>
         <div id="github">
                 <a href="https://github.com/kiganix/kiganix.co.jp" target="_blank">
