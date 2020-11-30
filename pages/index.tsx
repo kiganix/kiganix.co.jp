@@ -22,7 +22,7 @@ const clients: Client[] = [
 ]
 
 const ClientListItem = ({ client, t }: { client: Client, t: TFunction }) => {
-    return <li key={client.nameKey}>
+    return <li>
         <a href={client.url} target="_blank">{t(client.nameKey)}</a>
         &nbsp;
         <span>{t(client.asideKey)}</span>
