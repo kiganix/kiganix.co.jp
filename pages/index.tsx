@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { shuffle } from 'd3-array'
-import { TFunction } from 'next-i18next'
+import { TFunction, WithTranslation } from 'next-i18next'
+import { GetServerSideProps, NextPageContext } from 'next'
 
 const { _, publicRuntimeConfig } = getConfig()
 
@@ -28,7 +29,20 @@ const ClientListItem = ({ client, t }: { client: Client, t: TFunction }) => {
     </li>
 }
 
-const Index = ({ t, i18n }) => (
+type SSP = {
+    shuffledClients: Client[],
+}
+type Props = WithTranslation & NextPageContext & SSP
+
+export const getServerSideProps: GetServerSideProps<SSP> = async (context) => {
+    return {
+      props: {
+        shuffledClients: shuffle(clients),
+      }
+    }
+  }
+
+const Index = ({ t, i18n, shuffledClients }: Props) => (
     <>
         <Head>
             <title lang={i18n.language}>{t('title')}</title>
@@ -113,7 +127,7 @@ const Index = ({ t, i18n }) => (
         </table>
         <h2>{t('our-clients')}</h2>
         <ul>
-            { shuffle(clients).map((itr) => <ClientListItem client={itr} t={t} />) }
+            { shuffledClients.map((itr) => <ClientListItem key={itr.nameKey} client={itr} t={t} />) }
         </ul>
         <div id="github">
                 <a href="https://github.com/kiganix/kiganix.co.jp" target="_blank">
