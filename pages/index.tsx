@@ -108,7 +108,7 @@ const Index = ({ t, i18n, shuffledClients }: Props) => (
                     <td>
                         <ul>
                             <li><a href="https://lapras.com/public/AQNWBZV" target="_blank">{t('entrusted-software-development')}</a></li>
-                            <li><a href="https://lapras.com/public/AQNWBZV" target="_blank">{t('educational-business')}</a></li>
+                            <li><a href="https://seminar.kiganix.com" target="_blank">{t('educational-business')}</a></li>
                             <li><a href="https://music.kiganix.com" target="_blank">{t('music-publishing')}</a></li>
                         </ul>
                     </td>
