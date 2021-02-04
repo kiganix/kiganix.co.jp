@@ -15,7 +15,7 @@ type Client = { nameKey: string, url: string, asideKey: string }
 
 const clients: Client[] = [
     { nameKey: 'vg-inc', url: 'https://voyagegroup.com', asideKey: 'vg-inc-aside' },
-    { nameKey: 'sepori-inc', url: 'https://www.septeni-original.co.jp', asideKey: 'sepori-inc-aside' },
+    { nameKey: 'sepori-inc', url: 'https://www.flinters.co.jp', asideKey: 'sepori-inc-aside' },
     { nameKey: 'seisa-kokusai', url: 'https://www.seisagroup.jp', asideKey: 'seisa-kokusai-aside' },
 ]
 
