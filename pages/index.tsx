@@ -18,6 +18,7 @@ const clients: Client[] = [
     { nameKey: 'sepori-inc', url: 'https://www.flinters.co.jp', asideKey: 'sepori-inc-aside' },
     { nameKey: 'seisa-kokusai', url: 'https://www.seisagroup.jp', asideKey: 'seisa-kokusai-aside' },
     { nameKey: 'gmo-cn-inc', url: 'https://my.freenance.net/profile/e92rcxVC', asideKey: null },
+    { nameKey: 'degica-co-ltd', url: 'https://degica.jp', asideKey: null }
 ]
 
 const ClientListItem = ({ client, t }: { client: Client, t: TFunction }) => {
