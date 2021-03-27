@@ -50,7 +50,19 @@
     object-fit: cover;
     background-position: center;
     background-size: cover;
-    height: 21em;
+    
     box-shadow: 0 3px 10px #eee;
     background-color: #eee;
+}
+
+@media (min-width: 700px) {
+    .heroImage {
+        height: 21em;
+    }
+}
+
+@media (max-width: 700px) {
+    .heroImage {
+        height: 15em;
+    }
 }
