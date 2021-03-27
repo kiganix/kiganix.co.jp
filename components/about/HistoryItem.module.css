@@ -1,0 +1,24 @@
+.parent {
+    margin: 0 auto;
+}
+
+.item th {
+    font-weight: bold;
+    text-align: right;
+    vertical-align: baseline;
+    white-space: nowrap;
+
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+.item th,
+.item td {
+    padding: 0.6em 1em !important;
+}
+
+@media (min-width: 1000px) {
+    .parent {
+        max-width: 90%;
+    }
+}
