@@ -14,7 +14,7 @@ function AboutKiganix() {
     return <Section>
         <SectionHeader text="Kiganixについて"/>
         <HeroImage
-            src="/static/penguin.png"/>
+            src="https://kiganix.imgix.net/static/penguin.png?w=800&amp;auto=compress"/>
         合同会社キガニックスは、東京都昭島市を拠点とするテクノロジー企業です。<br/>
         ソフトウェア技術をレバレッジに効率化を推し進め、様々な関連事業を企画・展開しています。
     </Section>
