@@ -2,14 +2,6 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 0 1em;
-
-    font-family: 'Noto Sans JP', 'Roboto', sans-serif;
-
-    font-size: 1.05em;
-    letter-spacing: 0.02em;
-    line-height: 1.6em;
-    color: #333;
-    background-color: #fff;
 }
 
 .container h1,
