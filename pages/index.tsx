@@ -109,10 +109,6 @@ const Index = ({ t, i18n, shuffledClients }: Props) => (
                         <td>{t('foundation-date')}</td>
                     </tr>
                     <tr>
-                        <th>{t('label-for-about')}</th>
-                        <td><Link href="/about">{t('about')}</Link></td>
-                    </tr>
-                    <tr>
                         <th>{t('label-for-ceo')}</th>
                         <td><a href="https://github.com/S64" target="_blank">{t('ceo')}</a></td>
                     </tr>
