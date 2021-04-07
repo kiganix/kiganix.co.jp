@@ -1,13 +1,17 @@
 import I18Next from '../../i18n'
-import { NextPageContext } from "next";
-import { WithTranslation } from "next-i18next";
-import { Section } from "../../components/about/Section";
-import { SectionHeader } from "../../components/about/SectionHeader";
+import { NextPageContext } from "next"
+import { WithTranslation } from "next-i18next"
+import { Section } from "../../components/about/Section"
+import { SectionHeader } from "../../components/about/SectionHeader"
+import Head from 'next/head'
 
 type Props = NextPageContext & WithTranslation
 
 function ServicesIndex(props: Props) {
     return <>
+        <Head>
+            <title>主要事業</title>
+        </Head>
         <Section>
             <SectionHeader text="主要事業"/>
             Kiganixは創業時より高度な専門技術を主たる商材とし、お客様のビジネス成長をテクノロジーで支えるプロフェッショナルサービスを提供しています。

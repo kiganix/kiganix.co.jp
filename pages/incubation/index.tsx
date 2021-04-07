@@ -1,13 +1,17 @@
 import I18Next from '../../i18n'
-import { NextPageContext } from "next";
-import { WithTranslation } from "next-i18next";
-import { Section } from "../../components/about/Section";
-import { SectionHeader } from "../../components/about/SectionHeader";
+import { NextPageContext } from "next"
+import { WithTranslation } from "next-i18next"
+import { Section } from "../../components/about/Section"
+import { SectionHeader } from "../../components/about/SectionHeader"
+import Head from 'next/head'
 
 type Props = NextPageContext & WithTranslation
 
 function IncuvationIndex(props: Props) {
     return <>
+        <Head>
+            <title>インキュベーション領域</title>
+        </Head>
         <Section>
             <SectionHeader text="インキュベーション領域"/>
             Kiganixでは主要事業により培った技術を元に、様々な関連事業のインキュベーションを行っています。
