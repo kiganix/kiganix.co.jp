@@ -12,9 +12,7 @@ export function GlobalHeader(props: Props) {
     return <header className={css.globalHeader}>
         <div className={css.globalHeaderInner}>
             <div className={css.flexFill}>
-                <Link href="/">
-                    <Logo>Kiganix, G.K.</Logo>
-                </Link>
+                <Logo>Kiganix, G.K.</Logo>
             </div>
             <nav className={css.nav}>
                 <Link href="/about">{t('label-for-about')}</Link>
