@@ -38,7 +38,7 @@ function History() {
 
 function OurStyle() {
     return <Section>
-        <SectionHeader text="事業概要"/>
+        <SectionHeader text="Kiganixについて"/>
         <div>
             Kiganixはソフトウェア開発受託事業により約8割の収益を上げており、そのほとんどは大手広告事業者から直接委託を受けています。<br/>
             各関連事業は本事業による収益の投資、およびソフトウェア技術による業務効率化により、第2の収益軸の創出を目指しインキュベーションを図っているものです。
