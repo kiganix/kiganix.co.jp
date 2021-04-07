@@ -24,3 +24,7 @@ table.details th {
     max-width: 16em;
     text-align: start;
 }
+
+table.details td:last-child {
+    padding-right: 2em;
+}
