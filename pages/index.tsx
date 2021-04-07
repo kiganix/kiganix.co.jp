@@ -11,6 +11,7 @@ import { GetServerSideProps, NextPageContext } from 'next'
 import Link from 'next/link'
 import { Section } from '../components/about/Section'
 import { HeroImage } from '../components/about/HeroImage'
+import { SectionHeader } from '../components/about/SectionHeader'
 
 const { _, publicRuntimeConfig } = getConfig()
 
@@ -132,12 +133,12 @@ const Index = ({ t, i18n, shuffledClients }: Props) => (
             <title lang={i18n.language}>{t('title')}</title>
         </Head>
         <AboutKiganix/>
-        <div className={css.index}>
-            <h2>{t('our-clients')}</h2>
+        <Section>
+            <SectionHeader text={t('our-clients')}/>
             <ul>
                 { shuffledClients.map((itr) => <ClientListItem key={itr.nameKey} client={itr} t={t} />) }
             </ul>
-        </div>
+        </Section>
     </>
 )
 
