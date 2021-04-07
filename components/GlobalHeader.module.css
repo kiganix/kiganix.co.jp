@@ -1,0 +1,27 @@
+.globalHeader {
+}
+
+.globalHeaderInner {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flexFill {
+    flex: 1;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav > a {
+    display: block;
+    text-decoration: unset;
+}
+
+.nav > a:not(:last-child) {
+    margin-right: 1.2em;
+}

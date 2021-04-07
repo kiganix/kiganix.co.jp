@@ -1,16 +1,23 @@
 import '../styles.css'
+import css from './_app.module.css'
 import I18Next from '../i18n'
 import Head from 'next/head'
 import getConfig from 'next/config'
 import { useRouter } from 'next/router'
 import i18n from '../i18n'
 import { config as faConfig } from '@fortawesome/fontawesome-svg-core'
+import { GlobalHeader } from '../components/GlobalHeader'
+import { GlobalFooter } from '../components/GlobalFooter'
+import React from 'react'
 
 const { _, publicRuntimeConfig } = getConfig()
 
 faConfig.autoAddCss = false
 
-const Layout  = ({ children }) => {
+type Props = {
+}
+
+const Layout  = (props: React.PropsWithChildren<Props>) => {
   const router = useRouter()
   return (
     <div>
@@ -73,9 +80,17 @@ gtag('config', 'UA-156087543-1');
                     `
                 }}/>
         </>
+        <>
+            <link rel="preconnect" href="https://fonts.gstatic.com"/>
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;family=Roboto:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+        </>
       </Head>
       <div>
-        {children}
+        <GlobalHeader/>
+        <div className={css.container}>
+            {props.children}
+        </div>
+        <GlobalFooter/>
       </div>
     </div>
   )
