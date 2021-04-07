@@ -5,6 +5,7 @@ import getConfig from 'next/config'
 import { useRouter } from 'next/router'
 import i18n from '../i18n'
 import { config as faConfig } from '@fortawesome/fontawesome-svg-core'
+import { GlobalHeader } from '../components/GlobalHeader'
 
 const { _, publicRuntimeConfig } = getConfig()
 
@@ -75,6 +76,7 @@ gtag('config', 'UA-156087543-1');
         </>
       </Head>
       <div>
+        <GlobalHeader/>
         {children}
       </div>
     </div>

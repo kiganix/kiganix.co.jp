@@ -1,0 +1,44 @@
+.globalHeader {
+}
+
+.globalHeaderInner {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flexFill {
+    flex: 1;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.logoImg {
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    margin: .7em .5em .7em .7em;
+
+    fill: #333;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+.logoText {
+    display: block;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
