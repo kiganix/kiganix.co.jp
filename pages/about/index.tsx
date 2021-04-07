@@ -3,22 +3,13 @@ import { TFunction, WithTranslation } from 'next-i18next'
 import { GetServerSideProps, NextPageContext } from 'next'
 import Head from 'next/head'
 import { SectionHeader } from '../../components/about/SectionHeader'
+import { Section } from '../../components/about/Section'
 import { HistoryItem, HistoryItemParent } from '../../components/about/HistoryItem'
 import { OurStyleItem, OurStyleParent } from '../../components/about/OurStyle'
 import css from './index.module.css'
 import React from 'react'
 
 type Props = WithTranslation & NextPageContext
-
-function AboutKiganix() {
-    return <Section>
-        <SectionHeader text="Kiganixについて"/>
-        <HeroImage
-            src="https://kiganix.imgix.net/static/penguin.png?w=800&amp;auto=compress"/>
-        合同会社キガニックスは、東京都昭島市を拠点とするテクノロジー企業です。<br/>
-        ソフトウェア技術をレバレッジに効率化を推し進め、様々な関連事業を企画・展開しています。
-    </Section>
-}
 
 function History() {
     return <Section>
@@ -69,25 +60,12 @@ function OurStyle() {
     </Section>
 }
 
-function Section(props: React.PropsWithChildren<{}>) {
-    return <div className={css.section}>{props.children}</div>
-}
-
-function HeroImage(props: {src: string}) {
-    return <div
-        className={css.heroImage}
-        style={{
-            backgroundImage: `url(${props.src})`,
-        }}></div>
-}
-
 function About(props: Props) {
     return <>
         <Head>
             <title>Kiganixについて</title>
         </Head>
         <div className={css.container}>
-            <AboutKiganix/>
             <OurStyle/>
             <History/>
         </div>

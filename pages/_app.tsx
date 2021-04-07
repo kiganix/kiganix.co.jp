@@ -1,4 +1,5 @@
 import '../styles.css'
+import css from './_app.module.css'
 import I18Next from '../i18n'
 import Head from 'next/head'
 import getConfig from 'next/config'
@@ -86,7 +87,9 @@ gtag('config', 'UA-156087543-1');
       </Head>
       <div>
         <GlobalHeader/>
-        {props.children}
+        <div className={css.container}>
+            {props.children}
+        </div>
         <GlobalFooter/>
       </div>
     </div>

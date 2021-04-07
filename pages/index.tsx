@@ -8,6 +8,8 @@ import { shuffle } from 'd3-array'
 import { TFunction, WithTranslation } from 'next-i18next'
 import { GetServerSideProps, NextPageContext } from 'next'
 import Link from 'next/link'
+import { Section } from '../components/about/Section'
+import { HeroImage } from '../components/about/HeroImage'
 
 const { _, publicRuntimeConfig } = getConfig()
 
@@ -43,13 +45,24 @@ export const getServerSideProps: GetServerSideProps<SSP> = async (context) => {
     }
   }
 
+function AboutKiganix() {
+    return <Section>
+        <HeroImage
+            src="https://kiganix.imgix.net/static/penguin.png?w=800&amp;auto=compress"/>
+        合同会社キガニックスは、東京都昭島市を拠点とするテクノロジー企業です。<br/>
+        ソフトウェア技術をレバレッジに効率化を推し進め、様々な関連事業を企画・展開しています。
+    </Section>
+}
+
 const Index = ({ t, i18n, shuffledClients }: Props) => (
     <>
         <Head>
             <title lang={i18n.language}>{t('title')}</title>
         </Head>
+        <>
+            <AboutKiganix/>
+        </>
         <div className={css.index}>
-            <h1>{t('heading')}</h1>
             <table className={css.details}>
                 <tbody>
                     <tr>
