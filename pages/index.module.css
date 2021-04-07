@@ -12,22 +12,29 @@
     margin-bottom: 5px;
 }
 
-.index th {
-    text-align: start;
-}
-
-.index td,
-.index th {
-    padding: .5em 1em;
-}
-
-.details th {
-    max-width: 16em;
-}
-
 .infomark {
     display: inline-block;
     width: .7em;
     vertical-align: super;
     margin-left: .3em;
+}
+
+table.details {
+    border-collapse: collapse;
+    font-size: .95em;
+
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.details td,
+table.details th {
+    padding: .5em 1em;
+    border: solid 1px #ddd;
+}
+
+table.details th {
+    max-width: 16em;
+    text-align: start;
 }
