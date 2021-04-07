@@ -79,6 +79,10 @@ gtag('config', 'UA-156087543-1');
                     `
                 }}/>
         </>
+        <>
+            <link rel="preconnect" href="https://fonts.gstatic.com"/>
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;family=Roboto:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+        </>
       </Head>
       <div>
         <GlobalHeader/>
