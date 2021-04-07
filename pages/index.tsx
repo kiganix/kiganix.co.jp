@@ -4,7 +4,6 @@ import I18Next from '../i18n'
 import getConfig from 'next/config'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { shuffle } from 'd3-array'
 import { TFunction, WithTranslation } from 'next-i18next'
 import { GetServerSideProps, NextPageContext } from 'next'
@@ -50,14 +49,6 @@ const Index = ({ t, i18n, shuffledClients }: Props) => (
             <title lang={i18n.language}>{t('title')}</title>
         </Head>
         <div className={css.index}>
-            <div className={css.locales}>
-                <span>Language: </span>
-                <select defaultValue={i18n.language} onChange={(e) => i18n.changeLanguage(e.target.value) }>
-                    {[publicRuntimeConfig.defaultLanguage, ...publicRuntimeConfig.otherLanguages].map((lng) => {
-                        return <option value={lng}>{lng}</option>
-                    })}
-                </select>
-            </div>
             <h1>{t('heading')}</h1>
             <table className={css.details}>
                 <tbody>
@@ -136,11 +127,6 @@ const Index = ({ t, i18n, shuffledClients }: Props) => (
             <ul>
                 { shuffledClients.map((itr) => <ClientListItem key={itr.nameKey} client={itr} t={t} />) }
             </ul>
-            <div className={css.github}>
-                    <a href="https://github.com/kiganix/kiganix.co.jp" target="_blank">
-                        <FontAwesomeIcon icon={faGithub}/>
-                    </a>
-            </div>
         </div>
     </>
 )

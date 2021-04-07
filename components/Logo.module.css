@@ -1,0 +1,37 @@
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+svg.logoImg {
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    margin-left: .7em;
+    margin-right: .5em;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+svg.logoImgVerticalMargin {
+    margin-top: .7em;
+    margin-bottom: .7em;
+}
+
+.logoText {
+    display: block;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+}
+
+svg.logoImgDark {
+    fill: #fff;
+}
+
+svg.logoImgLight {
+    fill: #333;
+}

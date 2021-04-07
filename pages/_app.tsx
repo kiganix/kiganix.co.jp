@@ -6,12 +6,17 @@ import { useRouter } from 'next/router'
 import i18n from '../i18n'
 import { config as faConfig } from '@fortawesome/fontawesome-svg-core'
 import { GlobalHeader } from '../components/GlobalHeader'
+import { GlobalFooter } from '../components/GlobalFooter'
+import React from 'react'
 
 const { _, publicRuntimeConfig } = getConfig()
 
 faConfig.autoAddCss = false
 
-const Layout  = ({ children }) => {
+type Props = {
+}
+
+const Layout  = (props: React.PropsWithChildren<Props>) => {
   const router = useRouter()
   return (
     <div>
@@ -77,7 +82,8 @@ gtag('config', 'UA-156087543-1');
       </Head>
       <div>
         <GlobalHeader/>
-        {children}
+        {props.children}
+        <GlobalFooter/>
       </div>
     </div>
   )
