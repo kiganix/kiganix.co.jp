@@ -130,10 +130,6 @@ const Index = ({ t, i18n, shuffledClients }: Props) => (
                         <th>{t('label-for-newsletter')}</th>
                         <td><a href="https://newsletter.kiganix.com" target="_blank">Kiganix Newsletter</a></td>
                     </tr>
-                    <tr>
-                        <th>{t('label-for-contact-us')}</th>
-                        <td><a href="https://www.notion.so/kiganix/88616ab67c394875941b5cb1ef438e00" target="_blank">{t('contact-methods')}</a></td>
-                    </tr>
                 </tbody>
             </table>
             <h2>{t('our-clients')}</h2>
