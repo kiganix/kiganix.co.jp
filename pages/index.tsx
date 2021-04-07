@@ -110,16 +110,6 @@ function IndexTable() {
                 <td><a href="https://github.com/S64" target="_blank">{t('ceo')}</a></td>
             </tr>
             <tr>
-                <th>{t('label-for-our-business')}</th>
-                <td>
-                    <ul>
-                        <li><a href="https://lapras.com/public/AQNWBZV" target="_blank">{t('entrusted-software-development')}</a></li>
-                        <li><a href="https://seminar.kiganix.com" target="_blank">{t('educational-business')}</a></li>
-                        <li><a href="https://music.kiganix.com" target="_blank">{t('music-publishing')}</a></li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
                 <th>{t('label-for-newsletter')}</th>
                 <td><a href="https://newsletter.kiganix.com" target="_blank">Kiganix Newsletter</a></td>
             </tr>
