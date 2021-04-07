@@ -16,6 +16,7 @@ export function GlobalHeader(props: Props) {
             </div>
             <nav className={css.nav}>
                 <Link href="/about">{t('label-for-about')}</Link>
+                <Link href="/services">{t('label-for-our-business')}</Link>
                 <a href="https://www.notion.so/kiganix/88616ab67c394875941b5cb1ef438e00" target="_blank">{t('label-for-contact-us')}</a>
             </nav>
         </div>
