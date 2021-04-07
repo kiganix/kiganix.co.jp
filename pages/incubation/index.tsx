@@ -7,7 +7,7 @@ import Head from 'next/head'
 
 type Props = NextPageContext & WithTranslation
 
-function IncuvationIndex(props: Props) {
+function IncubationIndex(props: Props) {
     return <>
         <Head>
             <title>インキュベーション領域</title>
@@ -39,4 +39,4 @@ function IncuvationIndex(props: Props) {
     </>
 }
 
-export default I18Next.withTranslation()(IncuvationIndex)
+export default I18Next.withTranslation()(IncubationIndex)
