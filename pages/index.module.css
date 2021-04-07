@@ -1,13 +1,3 @@
-.index h1,
-.index h2,
-.index h3,
-.index h4,
-.index h5,
-.index h6 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
 .infomark {
     display: inline-block;
     width: .7em;
@@ -19,7 +9,7 @@ table.details {
     border-collapse: collapse;
     font-size: .95em;
 
-    margin-top: 48px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
 }
