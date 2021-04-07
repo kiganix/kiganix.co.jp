@@ -16,3 +16,12 @@
     display: flex;
     align-items: center;
 }
+
+.nav > a {
+    display: block;
+    text-decoration: unset;
+}
+
+.nav > a:not(:last-child) {
+    margin-right: 1em;
+}
