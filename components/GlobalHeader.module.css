@@ -3,7 +3,6 @@
 
 .globalHeaderInner {
     display: flex;
-    flex-direction: row;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -14,7 +13,6 @@
 
 .nav {
     display: flex;
-    align-items: center;
 }
 
 .nav > a {
@@ -22,6 +20,31 @@
     text-decoration: unset;
 }
 
-.nav > a:not(:last-child) {
-    margin-right: 1.2em;
+@media all and (max-width: 800px) {
+    .globalHeaderInner {
+        flex-direction: column;
+    }
+
+    .nav {
+        justify-content: center;
+        padding: 0 0.6em;
+    }
+
+    .nav > a {
+        margin: 0 0.6em;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .globalHeaderInner {
+        flex-direction: row;
+    }
+
+    .nav {
+        align-items: center;
+    }
+
+    .nav > a:not(:last-child) {
+        margin-right: 1.2em;
+    }
 }
