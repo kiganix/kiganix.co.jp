@@ -50,9 +50,12 @@ function ServicesIndex(props: Props) {
                     <li><a href="https://seminar.kiganix.com">Kiganixの教育事業</a></li>
                 </ul>
                 <>
-                    <h2>事例: S高校様（北海道札幌市 大手学校法人）</h2>
+                    <h2>事例: 学校法人国際学園様（北海道札幌市）</h2>
                     コンピュータープログラミングに関する高校生向け選択授業の企画・開催を受託。<br/>
                     毎週2コマ程度の授業を通してこれからの社会におけるソフトウェアとの関わりを教授し、数年に渡って信頼頂いております。
+                    <ul>
+                        <li><a href="http://blog.livedoor.jp/seisaosa/archives/52221660.html" target="_blank">機械工学ゼミ : 星槎国際高校大阪 NEWS LETTER</a></li>
+                    </ul>
                 </>
             </>
         </Section>
