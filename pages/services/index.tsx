@@ -4,13 +4,14 @@ import { WithTranslation } from "next-i18next"
 import { Section } from "../../components/about/Section"
 import { SectionHeader } from "../../components/about/SectionHeader"
 import Head from 'next/head'
+import { buildTitle } from '../../utils'
 
 type Props = NextPageContext & WithTranslation
 
 function ServicesIndex(props: Props) {
     return <>
         <Head>
-            <title>主要事業</title>
+            <title lang={props.i18n.language}>{buildTitle(props.t, '主要事業')}</title>
         </Head>
         <Section>
             <SectionHeader text="主要事業"/>

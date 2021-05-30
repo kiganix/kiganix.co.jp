@@ -8,6 +8,7 @@ import { HistoryItem, HistoryItemParent } from '../../components/about/HistoryIt
 import { OurStyleItem, OurStyleParent } from '../../components/about/OurStyle'
 import React from 'react'
 import css from './index.module.css'
+import { buildTitle } from '../../utils'
 
 function Location(props: React.PropsWithChildren<{
     name: string,
@@ -46,7 +47,7 @@ function Locations(props: Props) {
 
     return <>
         <Head>
-            <title>拠点</title>
+            <title lang={props.i18n.language}>{buildTitle(props.t, '拠点')}</title>
         </Head>
         <Location
             name="キガニックス中神駅前第1営業所"

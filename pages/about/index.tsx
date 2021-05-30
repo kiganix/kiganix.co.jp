@@ -8,6 +8,7 @@ import { HistoryItem, HistoryItemParent } from '../../components/about/HistoryIt
 import { OurStyleItem, OurStyleParent } from '../../components/about/OurStyle'
 import css from './index.module.css'
 import React from 'react'
+import { buildTitle } from '../../utils'
 
 type Props = WithTranslation & NextPageContext
 
@@ -63,7 +64,7 @@ function OurStyle() {
 function About(props: Props) {
     return <>
         <Head>
-            <title>Kiganixについて</title>
+            <title lang={props.i18n.language}>{buildTitle(props.t, 'Kiganixについて')}</title>
         </Head>
         <div className={css.container}>
             <OurStyle/>
