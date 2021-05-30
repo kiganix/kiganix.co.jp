@@ -6,3 +6,51 @@
 .externalLinks > a {
     margin-inline-end: 0.5em;
 }
+
+.item {
+    background-repeat: no-repeat;
+    padding-top: 1.5em;
+}
+
+.content {
+    background-color: #fff;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+}
+
+@media all and (min-width: 800px) {
+    .item {
+        min-height: 300px;
+        padding-bottom: 1.5em;
+        background-position: left center;
+        background-size: contain;
+    }
+    .content {
+        margin-left: 280px;
+        padding-bottom: 1.5em;
+    }
+}
+
+@media all and (min-width: 550px) and (max-width: 800px) {
+    .item {
+        min-height: 200px;
+        padding-bottom: 1.5em;
+        background-position: left center;
+        background-size: contain;
+    }
+    .content {
+        margin-left: 50px;
+        padding-bottom: 1.5em;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .item {
+        background-position: center center;
+        background-size: cover;
+        padding-top: 100px;
+    }
+    .content {
+        padding-right: 1.5em;
+    }
+}

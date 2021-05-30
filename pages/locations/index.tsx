@@ -17,22 +17,10 @@ function Location(props: React.PropsWithChildren<{
     links: React.ReactNode[],
 }>) {
     return <Section>
-        <div style={{
+        <div className={css.item} style={{
             backgroundImage: `url(${props.imageUrl.toString()})`,
-            backgroundPosition: 'left center',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'contain',
-            minHeight: '300px',
-            paddingTop: '1.5em',
-            paddingBottom: '1.5em',
         }}>
-            <div style={{
-                marginLeft: '280px',
-                backgroundColor: '#fff',
-                paddingTop: '1.5em',
-                paddingLeft: '1.5em',
-                paddingBottom: '1.5em',
-            }}>
+            <div className={css.content}>
                 <h1 style={{ lineHeight: 1.1, margin: 0, }}>
                     <span style={{ marginRight: '0.3em', }}>{props.name}</span>
                     {props.subName ? <span style={{ color: '#bbb' }}>{props.subName}</span> : ''}
