@@ -17,9 +17,10 @@ function Location(props: React.PropsWithChildren<{
     links: React.ReactNode[],
 }>) {
     return <Section>
-        <div className={css.item} style={{
-            backgroundImage: `url(${props.imageUrl.toString()})`,
-        }}>
+        <div className={css.item}>
+            <div className={css.background} style={{
+                backgroundImage: `url(${props.imageUrl.toString()})`,
+            }}></div>
             <div className={css.content}>
                 <h1 style={{ lineHeight: 1.1, margin: 0, }}>
                     <span style={{ marginRight: '0.3em', }}>{props.name}</span>
