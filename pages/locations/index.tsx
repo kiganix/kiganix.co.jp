@@ -7,12 +7,14 @@ import { Section } from '../../components/about/Section'
 import { HistoryItem, HistoryItemParent } from '../../components/about/HistoryItem'
 import { OurStyleItem, OurStyleParent } from '../../components/about/OurStyle'
 import React from 'react'
+import css from './index.module.css'
 
 function Location(props: React.PropsWithChildren<{
     name: string,
     subName?: string,
     address: React.ReactNode,
     imageUrl: URL,
+    links: React.ReactNode[],
 }>) {
     return <Section>
         <div style={{
@@ -20,7 +22,7 @@ function Location(props: React.PropsWithChildren<{
             backgroundPosition: 'left center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
-            minHeight: '250px',
+            minHeight: '300px',
             paddingTop: '1.5em',
             paddingBottom: '1.5em',
         }}>
@@ -39,6 +41,9 @@ function Location(props: React.PropsWithChildren<{
                     <div>{props.address}</div>
                     <div style={{ marginTop: '1.5em' }}>{props.children}</div>
                 </div>
+                {props.links.length > 0 ? <div className={css.externalLinks}>{
+                    props.links
+                }</div> : <></>}
             </div>
         </div>
     </Section>
@@ -52,16 +57,21 @@ function Locations(props: Props) {
             <title>拠点</title>
         </Head>
         <Location
-            name="合同会社キガニックス 中神駅前第1営業所"
+            name="キガニックス中神駅前第1営業所"
             imageUrl={new URL('https://kiganix.imgix.net/static/penguin.png?w=800&amp;auto=compress')}
-            address={<a href="https://goo.gl/maps/6GyZzULKTXD38Qoa6" target="_blank">〒196-0025 東京都昭島市朝日町1-11-5 山内ビル 3-1</a>}>
+            address={<a href="https://goo.gl/maps/6GyZzULKTXD38Qoa6" target="_blank">〒196-0025 東京都昭島市朝日町1-11-5 山内ビル 3-1</a>}
+            links={[
+                <a target="_blank" href="https://goo.gl/maps/ZjwWTzaV5nW6dqD86">🗺️ Google Maps</a>,
+                <a target="_blank" href="https://www.amazon.co.jp/hz/wishlist/genericItemsPage/15ZEPEPZQV1LJ?type=wishlist&amp;sort=priority&amp;viewType=list">🌟 ほしいものリスト</a>
+            ]}>
             在宅勤務につき、従業員不在の場合があります。ご訪問の際は事前に弊社までご相談ください。
         </Location>
         <Location
             name="合同会社キガニックス"
             subName="本社"
             imageUrl={new URL('https://kiganix.imgix.net/static/penguin.png?w=800&amp;auto=compress')}
-            address={<a href="https://g.page/Kiganix" target="_blank">〒196-0001 東京都昭島市美堀町5丁目1番17号</a>}>
+            address={<a href="https://g.page/Kiganix" target="_blank">〒196-0001 東京都昭島市美堀町5丁目1番17号</a>}
+            links={[]}>
             本店所在地はこちらになります。ご訪問は受け付けておりません。
         </Location>
     </>
