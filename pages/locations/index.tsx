@@ -62,7 +62,7 @@ function Locations(props: Props) {
         <Location
             name="合同会社キガニックス"
             subName="本社"
-            imageUrl={new URL('https://kiganix.imgix.net/static/penguin.png?w=800&amp;auto=compress')}
+            imageUrl={new URL('https://kiganix.imgix.net/static/nakagami1st.jpg?w=800&amp;auto=compress')}
             address={<a href={hqGmapsUrl} target="_blank">〒196-0001 東京都昭島市美堀町5丁目1番17号</a>}
             links={[]}>
             本店所在地はこちらになります。ご訪問は受け付けておりません。
