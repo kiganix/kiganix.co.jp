@@ -15,10 +15,13 @@
 .background {
     top: 0;
     left: 0;
-    right: 0;
+    right: auto;
     bottom: 0;
+    width: 450px;
+    max-width: 100%;
 
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content {
@@ -36,7 +39,6 @@
     .background {
         position: absolute;
         background-position: left center;
-        background-size: contain;
     }
     .content {
         margin-left: 240px;
@@ -52,7 +54,6 @@
     .background {
         position: absolute;
         background-position: left center;
-        background-size: contain;
     }
     .content {
         margin-left: 50px;
@@ -65,7 +66,6 @@
         position: static;
         min-height: 200px;
         background-position: center center;
-        background-size: cover;
     }
     .content {
         padding-right: 1.5em;
