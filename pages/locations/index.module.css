@@ -1,0 +1,73 @@
+.externalLinks {
+    margin-top: 0.5em;
+    font-size: .95em;
+}
+
+.externalLinks > a {
+    margin-inline-end: 0.5em;
+}
+
+.item {
+    position: relative;
+    padding-top: 1.5em;
+}
+
+.background {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-repeat: no-repeat;
+}
+
+.content {
+    position: relative;
+    background-color: #fff;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+}
+
+@media all and (min-width: 800px) {
+    .item {
+        min-height: 300px;
+        padding-bottom: 1.5em;
+    }
+    .background {
+        position: absolute;
+        background-position: left center;
+        background-size: contain;
+    }
+    .content {
+        margin-left: 240px;
+        padding-bottom: 1.5em;
+    }
+}
+
+@media all and (min-width: 550px) and (max-width: 800px) {
+    .item {
+        min-height: 290px;
+        padding-bottom: 1.5em;
+    }
+    .background {
+        position: absolute;
+        background-position: left center;
+        background-size: contain;
+    }
+    .content {
+        margin-left: 50px;
+        padding-bottom: 1.5em;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .background {
+        position: static;
+        min-height: 200px;
+        background-position: center center;
+        background-size: cover;
+    }
+    .content {
+        padding-right: 1.5em;
+    }
+}

@@ -12,6 +12,7 @@ import Link from 'next/link'
 import { Section } from '../components/about/Section'
 import { HeroImage } from '../components/about/HeroImage'
 import { SectionHeader } from '../components/about/SectionHeader'
+import { buildTitle } from '../utils'
 
 const { _, publicRuntimeConfig } = getConfig()
 
@@ -120,7 +121,7 @@ function IndexTable() {
 const Index = ({ t, i18n, shuffledClients }: Props) => (
     <>
         <Head>
-            <title lang={i18n.language}>{t('title')}</title>
+            <title lang={i18n.language}>{buildTitle(t)}</title>
         </Head>
         <AboutKiganix/>
         <Section>

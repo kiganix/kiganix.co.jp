@@ -4,13 +4,14 @@ import { WithTranslation } from "next-i18next"
 import { Section } from "../../components/about/Section"
 import { SectionHeader } from "../../components/about/SectionHeader"
 import Head from 'next/head'
+import { buildTitle } from '../../utils'
 
 type Props = NextPageContext & WithTranslation
 
 function IncubationIndex(props: Props) {
     return <>
         <Head>
-            <title>インキュベーション領域</title>
+            <title lang={props.i18n.language}>{buildTitle(props.t, 'インキュベーション領域')}</title>
         </Head>
         <Section>
             <SectionHeader text="インキュベーション領域"/>
