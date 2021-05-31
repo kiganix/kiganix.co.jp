@@ -55,7 +55,7 @@ function Locations(props: Props) {
             address={<a href={nakagamiGmapsUrl} target="_blank">〒196-0025 東京都昭島市朝日町1-11-5 山内ビル 3-1</a>}
             links={[
                 <a target="_blank" href={nakagamiGmapsUrl}>🗺️ Google Maps</a>,
-                <a target="_blank" href="https://www.amazon.co.jp/hz/wishlist/genericItemsPage/15ZEPEPZQV1LJ?type=wishlist&amp;sort=priority&amp;viewType=list">🌟 ほしいものリスト</a>
+                <a target="_blank" href="https://www.amazon.co.jp/hz/wishlist/ls/15ZEPEPZQV1LJ?type=shopping&amp;sort=priority&amp;viewType=list">🌟 ほしいものリスト</a>
             ]}>
             在宅勤務につき、従業員不在の場合があります。ご訪問の際は事前に弊社までご相談ください。
         </Location>
