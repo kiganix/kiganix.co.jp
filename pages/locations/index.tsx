@@ -52,7 +52,7 @@ function Locations(props: Props) {
         <Location
             name="キガニックス中神駅前第1営業所"
             imageUrl={new URL('https://kiganix.imgix.net/static/nakagami1st.jpg?w=800&amp;auto=compress')}
-            address={<a href={nakagamiGmapsUrl} target="_blank">〒196-0025 東京都昭島市朝日町1-11-5 山内ビル 3-1</a>}
+            address={<a href={nakagamiGmapsUrl} target="_blank">〒196-0025 東京都昭島市朝日町1-11-5 山内ビル 301</a>}
             links={[
                 <a target="_blank" href={nakagamiGmapsUrl}>🗺️ Google Maps</a>,
                 <a target="_blank" href="https://links.kiganix.com/nakagami1st-wishlist">🌟 ほしいものリスト</a>
