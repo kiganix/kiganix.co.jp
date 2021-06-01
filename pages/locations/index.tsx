@@ -43,7 +43,7 @@ type Props = WithTranslation & NextPageContext
 
 function Locations(props: Props) {
     const hqGmapsUrl = 'https://g.page/Kiganix'
-    const nakagamiGmapsUrl = 'https://goo.gl/maps/6GyZzULKTXD38Qoa6'
+    const nakagamiGmapsUrl = 'https://goo.gl/maps/x9De9z2NQvVEwkb66'
 
     return <>
         <Head>
