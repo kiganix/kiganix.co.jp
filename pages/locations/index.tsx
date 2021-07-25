@@ -43,7 +43,7 @@ type Props = WithTranslation & NextPageContext
 
 function Locations(props: Props) {
     const hqGmapsUrl = 'https://g.page/Kiganix'
-    const nakagamiGmapsUrl = 'https://goo.gl/maps/x9De9z2NQvVEwkb66'
+    const accessUrl = 'https://notion.kiganix.com/5b9ef46e-a936-4905-95c7-146ff91bcc60'
 
     return <>
         <Head>
@@ -52,12 +52,12 @@ function Locations(props: Props) {
         <Location
             name="キガニックス中神駅前第1営業所"
             imageUrl={new URL('https://kiganix.imgix.net/static/nakagami1st.jpg?w=800&amp;auto=compress')}
-            address={<a href={nakagamiGmapsUrl} target="_blank">〒196-0025 東京都昭島市朝日町1-11-5 山内ビル 301</a>}
+            address={<a href={accessUrl} target="_blank">〒196-0025 東京都昭島市朝日町1-11-5 山内ビル 301</a>}
             links={[
-                <a target="_blank" href={nakagamiGmapsUrl}>🗺️ Google Maps</a>,
+                <a target="_blank" href={accessUrl}>🗺️ アクセス</a>,
                 <a target="_blank" href="https://links.kiganix.com/nakagami1st-wishlist">🌟 ほしいものリスト</a>
             ]}>
-            在宅勤務につき、従業員不在の場合があります。ご訪問の際は事前に弊社までご相談ください。
+            在宅勤務につき、従業員不在の場合があります。<a href={accessUrl}>ご訪問の際はこちらをご確認の上</a>、事前に弊社までご相談ください。
         </Location>
         <Location
             name="合同会社キガニックス"
