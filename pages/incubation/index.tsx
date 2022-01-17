@@ -37,6 +37,15 @@ function IncubationIndex(props: Props) {
                 </ul>
             </>
         </Section>
+        <Section>
+            <h1>出版事業</h1>
+            <>
+                インターネット上で活躍するクリエイターと連携し、書籍の企画・制作・出版事業を展開しております。
+                <ul>
+                    <li><a href="https://kigapublishing.com" target="_blank">KIGA出版会</a></li>
+                </ul>
+            </>
+        </Section>
     </>
 }
 
