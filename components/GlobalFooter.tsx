@@ -24,6 +24,7 @@ export function GlobalFooter({
             </div>
             <nav className={css.nav}>
                 <a href="/locations">拠点</a>
+                <a href="https://www.facebook.com/kiganix/shop" target="_blank">Merch</a>
                 <a href="https://github.com/kiganix/kiganix.co.jp" target="_blank">GitHub</a>
             </nav>
             <nav className={css.nav}>
