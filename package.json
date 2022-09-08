@@ -1,10 +1,10 @@
 {
   "name": "kiganix.co.jp",
-  "version": "0.0.0-SNAPSHOT",
+  "version": "1.0.0-SNAPSHOT",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "export": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
@@ -23,5 +23,9 @@
     "react-dom": "16.13.1",
     "typescript": "^4.0.2",
     "babel-plugin-inline-react-svg": "^1.1.2"
+  },
+  "volta": {
+    "node": "16.17.0",
+    "npm": "8.19.1"
   }
 }
