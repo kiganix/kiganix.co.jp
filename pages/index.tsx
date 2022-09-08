@@ -35,18 +35,7 @@ const ClientListItem = ({ client, t }: { client: Client, t: TFunction }) => {
     </li>
 }
 
-type SSP = {
-    shuffledClients: Client[],
-}
-type Props = WithTranslation & NextPageContext & SSP
-
-export const getServerSideProps: GetServerSideProps<SSP> = async (context) => {
-    return {
-      props: {
-        shuffledClients: shuffle(clients),
-      }
-    }
-  }
+type Props = WithTranslation & NextPageContext
 
 function AboutKiganix() {
     return <Section>
@@ -118,7 +107,7 @@ function IndexTable() {
     </table>
 }
 
-const Index = ({ t, i18n, shuffledClients }: Props) => (
+const Index = ({ t, i18n }: Props) => (
     <>
         <Head>
             <title lang={i18n.language}>{buildTitle(t)}</title>
@@ -127,7 +116,7 @@ const Index = ({ t, i18n, shuffledClients }: Props) => (
         <Section>
             <SectionHeader text={t('our-clients')}/>
             <ul>
-                { shuffledClients.map((itr) => <ClientListItem key={itr.nameKey} client={itr} t={t} />) }
+                { clients.map((itr) => <ClientListItem key={itr.nameKey} client={itr} t={t} />) }
             </ul>
         </Section>
     </>
