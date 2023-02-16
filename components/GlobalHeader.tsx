@@ -18,7 +18,7 @@ export function GlobalHeader(props: Props) {
                 <Link href="/about">{t('label-for-about')}</Link>
                 <Link href="/services">{t('label-for-our-business')}</Link>
                 <Link href="/incubation">インキュベーション領域</Link>
-                <a href="https://www.notion.so/kiganix/88616ab67c394875941b5cb1ef438e00" target="_blank">{t('label-for-contact-us')}</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScBsIrIPeRH2xd-nR5_eauqzEueIgUI2tFyItJGCptLTGR8lw/viewform?usp=sf_link" target="_blank">{t('label-for-contact-us')}</a>
             </nav>
         </div>
     </header>
