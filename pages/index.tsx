@@ -61,6 +61,12 @@ function IndexTable() {
                 </td>
             </tr>
             <tr>
+                <th>{t('label-for-business-issuer-of-qualified-invoice-registration-number')}</th>
+                <td>
+                    <a href="https://www.invoice-kohyo.nta.go.jp/faq/faq-category/200/faq0008.html" target="_blank">{'T8012803002172'}</a>
+                </td>
+            </tr>
+            <tr>
                 <th>D-U-N-S® Number</th>
                 <td>
                     <a href="https://www.dnb.com/business-directory/company-profiles.kiganix_gk.f60e4dc6c2c6e86e360766f860bc0950.html" target="_blank">718232158</a>
