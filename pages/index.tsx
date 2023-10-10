@@ -63,7 +63,8 @@ function IndexTable() {
             <tr>
                 <th>{t('label-for-business-issuer-of-qualified-invoice-registration-number')}</th>
                 <td>
-                    <a href="https://www.invoice-kohyo.nta.go.jp/faq/faq-category/200/faq0008.html" target="_blank">{'T8012803002172'}</a>
+                    <a href="https://www.invoice-kohyo.nta.go.jp/regno-search/detail?selRegNo=8012803002172" target="_blank">{'T8012803002172'}</a>
+                    <a href="https://www.invoice-kohyo.nta.go.jp/about-toroku/index.html" target="_blank"><FontAwesomeIcon icon={faQuestionCircle} className={css.infomark}/></a>
                 </td>
             </tr>
             <tr>
