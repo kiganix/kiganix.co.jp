@@ -32,10 +32,6 @@ function IncubationIndex(props: Props) {
             <h1>IP事業</h1>
             <>
                 インターネット上で活躍するクリエイターと連携し、成長サポートおよび自社IPのライツマネジメント事業を展開しております。
-                <ul>
-                    <li><a href="https://nekonoojisan.com" target="_blank">ねこのおぢさん</a></li>
-                    <li><a href="https://store.kiganix.com" target="_blank">Kiganix Store</a></li>
-                </ul>
             </>
         </Section>
         <Section>
